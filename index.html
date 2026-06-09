@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suki Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+nav{
+    background:#111827;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#1e3c72;
+    font-size:2rem;
+}
+
+.about{
+    text-align:center;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-5px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card h3{
+    color:#1e3c72;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px;
+    font-size:1.1rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#1e3c72;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2a5298;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Suki Sivam</h1>
+    <p>AI & ML Enthusiast | Web Developer | Data Analyst</p>
+    <a href="#contact" class="btn">Contact Me</a>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+        <p>
+            Hello! I'm Suki Sivam, a passionate technology enthusiast interested in
+            Artificial Intelligence, Machine Learning, Edge AI, Data Analytics,
+            Cloud Computing and Full Stack Development. I enjoy building
+            innovative projects that solve real-world problems and continuously
+            learning new technologies.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill-box">Python</div>
+        <div class="skill-box">C Programming</div>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Machine Learning</div>
+        <div class="skill-box">Power BI</div>
+        <div class="skill-box">Linux</div>
+        <div class="skill-box">Grafana</div>
+        <div class="skill-box">Prometheus</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Edge AI Smart Transformer Monitoring</h3>
+            <p>
+                Developed an AI-based monitoring system for transformer health
+                prediction using voltage, current, temperature and load data.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Data Center Server Dashboard</h3>
+            <p>
+                Built a monitoring dashboard using Grafana and Prometheus for
+                tracking CPU, RAM, Disk and Network performance.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Netflix Power BI Dashboard</h3>
+            <p>
+                Created interactive visualizations and reports from Netflix
+                datasets for business insights and trend analysis.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Student Management System</h3>
+            <p>
+                Developed a web-based application for managing student records,
+                attendance and academic performance.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact">
+        <p>📧 Email : yourmail@example.com</p>
+        <p>💻 GitHub : github.com/yourusername</p>
+        <p>🔗 LinkedIn : linkedin.com/in/yourprofile</p>
+
+        <a href="#" class="btn">Download Resume</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Suki Sivam | Portfolio Website</p>
+</footer>
+
+</body>
+</html>
